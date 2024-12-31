@@ -6,14 +6,14 @@ export type TrackDocument = Track & Document;
 
 @Schema()
 export class Track{
-    @Prop()
+    @Prop({required: true})
     name: string;
 
-    @Prop()
+    @Prop({required: true})
     artist: string;
 
     @Prop()
-    track: string;
+    text: string;
 
     @Prop()
     listens: number;
